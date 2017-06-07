@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="14dp"
+            android:id="@+id/imv_add_new"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_add_newpaper" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Thêm mới"
+            android:textColor="@color/text_view_color"
+            android:textSize="14dp" />
+    </LinearLayout>
+</LinearLayout>

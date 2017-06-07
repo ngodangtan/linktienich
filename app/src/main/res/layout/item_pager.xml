@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="60dp"
+    android:orientation="vertical" >
+
+    <!--<TextView-->
+        <!--android:paddingLeft="60dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:id="@+id/tv_topic"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="Tin tức đó đây"-->
+        <!--android:textColor="@color/bg_color"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textStyle="bold" />-->
+
+    <ListView
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/lv_item_url"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/bg_color"
+        android:dividerHeight="1dp"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

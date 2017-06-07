@@ -1,0 +1,58 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_top"></include>
+        <!--<LinearLayout-->
+            <!--android:background="@android:color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/imv_next_url"-->
+                <!--android:padding="5dp"-->
+                <!--android:src="@drawable/ic_topic"-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="match_parent" />-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="BÁO YÊU THÍCH"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:paddingLeft="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center_vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/tv_topic"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="60dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/bg_color"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="20dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textStyle="bold" />&ndash;&gt;-->
+
+        <!--</LinearLayout>-->
+
+            <android.support.v4.view.ViewPager
+                android:background="@android:color/white"
+                android:id="@+id/view_pager_list_url"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_add" />
+
+</android.support.design.widget.CoordinatorLayout>

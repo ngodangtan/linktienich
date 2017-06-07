@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:src="@drawable/ic_24h"
+            android:padding="8dp"
+            android:id="@+id/imv_image_url"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical" />
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bản đồ"
+                android:textColor="@color/bg_color"
+                android:textSize="18dp"
+                android:ellipsize="marquee"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="https://pixlr.com/editor/"
+                android:textColor="@color/link_color"
+                android:textSize="14dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+        <ImageView
+            android:padding="10dp"
+            android:src="@drawable/ic_drop_menu"
+            android:id="@+id/imv_drop_menu"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"></ImageView>
+    </LinearLayout>
+
+</LinearLayout>
